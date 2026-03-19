@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color: #f5f7fa;
+    background: #0f1115;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    @apply border-pma-line;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 bg-pma-carbon text-white font-sans;
+    min-width: 320px;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.28em] text-pma-copper;
+  }
+
+  .panel {
+    @apply rounded-3xl border border-pma-line bg-white/5 shadow-panel backdrop-blur;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center rounded-full border border-pma-copper bg-pma-copper px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#d57b33];
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-pma-line bg-transparent px-5 py-3 text-sm font-semibold text-white transition hover:border-pma-ash hover:bg-white/5;
+  }
+
+  .metric-value {
+    @apply text-3xl font-bold text-white md:text-4xl;
+  }
+}
