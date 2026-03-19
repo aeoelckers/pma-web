@@ -32,14 +32,30 @@ export const content = {
       cta: 'Cotizar',
     },
     hero: {
-      badge: 'Logo integrado · identidad RED7',
-      secondaryBadge: 'Despacho y cotización rápida',
-      eyebrow: 'Equipamiento de alto desempeño para terreno real',
-      title: 'Tu vitrina ecommerce para accesorios 4x4, flotas y minería.',
+      badge: 'Branding RED7 integrado',
+      secondaryBadge: 'Cotización rápida para retail y flotas',
+      eyebrow: 'Diseño premium para una tienda industrial más confiable',
+      title: 'Accesorios, equipamiento y soluciones técnicas para',
+      titleAccent: 'pickups, 4x4 y operaciones de faena.',
       description:
-        'Reorganicé la portada para que se vea más comercial: mejor jerarquía de marca, vitrina de productos destacados, métricas de confianza y bloques listos para convertir visitas en cotizaciones.',
+        'Ajusté la portada para que se vea más equilibrada y aspiracional: mejor composición del hero, jerarquía de información más clara y una vitrina visual que transmite producto, stock y valor comercial.',
+      features: ['Categorías destacadas', 'Venta B2B / B2C', 'Look más premium', 'Espacios listos para fotos reales'],
       primaryAction: 'Solicitar cotización',
       secondaryAction: 'Explorar catálogo',
+      showcase: {
+        kicker: 'Colección destacada',
+        title: 'Vitrina visual lista para reemplazar por tu producto estrella',
+        note: 'Ideal para pickup equipada, accesorio premium o campaña de temporada.',
+        tags: ['Parachoques', 'Racks', 'Iluminación', 'Equipamiento minero'],
+      },
+      floatingCardLeft: {
+        value: 'Top seller',
+        label: 'Productos con mejor conversión y alto margen visual.',
+      },
+      floatingCardRight: {
+        value: 'Lead ready',
+        label: 'Preparado para captar consultas, stock y pedidos especiales.',
+      },
     },
     metrics: [
       { value: '+120', label: 'SKUs escalables para catálogo' },
@@ -48,7 +64,7 @@ export const content = {
     ],
     catalog: {
       label: 'Destacados del ecommerce',
-      availability: 'Stock referencial · actualización manual',
+      availability: 'Stock referencial',
       items: [
         { category: 'Parachoques', name: 'Defensa minera reforzada', price: 'Desde $890.000' },
         { category: 'Carga', name: 'Rack modular de faena', price: 'Desde $540.000' },
@@ -101,7 +117,7 @@ export const content = {
         'La base ya quedó con mejor foco ecommerce: branding más fuerte, áreas para productos destacados, confianza comercial y bloques flexibles para seguir creciendo sin rehacer la estética.',
       bullets: [
         'Logo RED7 integrado de forma protagonista en cabecera y fondo de hero.',
-        'Hero con métricas y vitrina comercial para comunicar oferta y disponibilidad.',
+        'Hero con composición más balanceada para evitar sensación de vacío.',
         'Secciones reutilizables para categorías, campañas, SKUs y contenido B2B.',
       ],
     },

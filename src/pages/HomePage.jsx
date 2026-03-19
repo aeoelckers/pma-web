@@ -43,8 +43,19 @@ export function HomePage({ copy }) {
                 <span className="hero-pill hero-pill-muted">{copy.hero.secondaryBadge}</span>
               </div>
               <p className="hero-eyebrow">{copy.hero.eyebrow}</p>
-              <h1 className="hero-title">{copy.hero.title}</h1>
+              <h1 className="hero-title">
+                {copy.hero.title}
+                <span className="hero-title-accent">{copy.hero.titleAccent}</span>
+              </h1>
               <p className="hero-description">{copy.hero.description}</p>
+
+              <div className="hero-feature-list">
+                {copy.hero.features.map((feature) => (
+                  <span key={feature} className="hero-feature-chip">
+                    {feature}
+                  </span>
+                ))}
+              </div>
 
               <div className="hero-actions">
                 <a href="#contact" className="button-primary">
@@ -70,6 +81,7 @@ export function HomePage({ copy }) {
               <div className="hero-brand-watermark" aria-hidden="true">
                 <LogoMark className="h-full w-full" />
               </div>
+
               <div className="hero-commerce-panel">
                 <div className="hero-commerce-header">
                   <span>{copy.catalog.label}</span>
@@ -88,11 +100,51 @@ export function HomePage({ copy }) {
                   ))}
                 </div>
               </div>
-              <PlaceholderVisual
-                label="VITRINA PRINCIPAL"
-                detail="Lista para reemplazar por una foto real de pickup equipada, producto destacado o banner de campaña."
-                className="hero-photo-placeholder"
-              />
+
+              <div className="hero-showcase-shell">
+                <div className="hero-showcase-topbar">
+                  <span />
+                  <span />
+                  <span />
+                </div>
+
+                <div className="hero-showcase-grid">
+                  <div className="hero-showcase-copy">
+                    <p>{copy.hero.showcase.kicker}</p>
+                    <h3>{copy.hero.showcase.title}</h3>
+                    <span>{copy.hero.showcase.note}</span>
+                  </div>
+
+                  <div className="hero-device-stage" aria-hidden="true">
+                    <div className="hero-device-glow" />
+                    <div className="hero-device-card">
+                      <div className="hero-device-plate" />
+                      <div className="hero-device-light hero-device-light-left" />
+                      <div className="hero-device-light hero-device-light-right" />
+                      <div className="hero-device-bar hero-device-bar-top" />
+                      <div className="hero-device-bar hero-device-bar-mid" />
+                      <div className="hero-device-bar hero-device-bar-low" />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="hero-showcase-footer">
+                  {copy.hero.showcase.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="hero-floating-card hero-floating-card-left">
+                <strong>{copy.hero.floatingCardLeft.value}</strong>
+                <span>{copy.hero.floatingCardLeft.label}</span>
+              </div>
+
+              <div className="hero-floating-card hero-floating-card-right">
+                <strong>{copy.hero.floatingCardRight.value}</strong>
+                <span>{copy.hero.floatingCardRight.label}</span>
+              </div>
+
               <div className="hero-glow hero-glow-large" />
               <div className="hero-glow hero-glow-small" />
             </div>
