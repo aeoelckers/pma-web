@@ -117,6 +117,18 @@ El sitio incluye las secciones solicitadas, ahora con un enfoque más directo a 
 - **Differentiation**: franja de mensajes que refuerza el posicionamiento industrial.
 - **Contact**: formulario corto, canales visibles y WhatsApp comercial.
 
+## Gestión de assets visuales
+
+Los archivos de marca, fotos, mockups y referencias visuales deben vivir en `media/`, separados por tipo de recurso para que el proyecto siga ordenado a medida que crezca. La estructura base ya considera logos, colores, tipografía, fotos de hero, fotos de producto y material visual de referencia.
+
+- `media/branding/logos/original/`: originales del logo (por ejemplo `PMA-Logo.jpeg`).
+- `media/branding/logos/exported/`: versiones listas para web o piezas comerciales.
+- `media/branding/colors/`: paleta oficial y sistema de color.
+- `media/photos/hero/`: fotos principales de portada.
+- `media/photos/products/`: fotos por línea de producto.
+- `media/photos/reference/`: referencias visuales o fotos de inspiración.
+- `media/visuals/mockups/`: propuestas de Canva/Figma y capturas de diseño.
+
 ## Estructura del proyecto
 
 ```text
