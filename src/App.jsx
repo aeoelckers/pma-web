@@ -24,7 +24,7 @@ function App() {
   }, [copy.meta.description, copy.meta.title, locale])
 
   return (
-    <SiteLayout navigation={copy.navigation} footer={copy.footer}>
+    <SiteLayout brand={copy.brand} navigation={copy.navigation} navbar={copy.navbar} footer={copy.footer}>
       <HomePage copy={copy} locales={locales} />
     </SiteLayout>
   )

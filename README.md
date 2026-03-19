@@ -1,6 +1,6 @@
 # PMA Web
 
-Sitio corporativo y comercial para **PMA**, marca chilena enfocada en accesorios y soluciones para **4x4, camionetas pickup y operaciones mineras**. La dirección del proyecto no es la de un ecommerce genérico: se construyó para comunicar **capacidad técnica, robustez operacional y compatibilidad real en terreno**, con una experiencia clara tanto para clientes **B2B** como **B2C especializado**.
+Sitio corporativo y comercial para **PMA Chile**, marca enfocada en accesorios y soluciones para **4x4, camionetas pickup y operaciones mineras**. La dirección del proyecto no es la de un ecommerce genérico: se construyó para comunicar **robustez, confianza, claridad comercial y compatibilidad real en terreno**, con una experiencia clara tanto para clientes **B2B** como **B2C especializado**.
 
 ## Posicionamiento de marca PMA
 
@@ -107,13 +107,15 @@ Este proyecto fue estructurado para cumplir los siguientes objetivos:
 
 ## Secciones implementadas
 
-El sitio incluye las secciones solicitadas:
+El sitio incluye las secciones solicitadas, ahora con un enfoque más directo a conversión y soporte comercial:
 
-- **Home**: presentación de marca, propuesta de valor y métricas operacionales.
-- **Products**: líneas de producto con tarjetas técnicas resumidas.
-- **Product detail**: bloque de detalle técnico para una solución destacada.
-- **Companies**: formulario de solicitud de cotización para empresas y flotas.
-- **Contact**: canales comerciales y cobertura.
+- **Home / Hero comercial**: propuesta de valor fuerte, CTA de cotización y estética industrial premium.
+- **Confianza**: mensajes rápidos de respaldo comercial y operacional.
+- **Products**: cards visuales con beneficio claro y llamado a revisar detalle.
+- **Product detail**: bloque que explica cómo PMA estructura una solución operacional.
+- **Companies**: sección B2B para flotas, contratistas y operaciones.
+- **Differentiation**: franja de mensajes que refuerza el posicionamiento industrial.
+- **Contact**: formulario corto, canales visibles y WhatsApp comercial.
 
 ## Estructura del proyecto
 
@@ -128,7 +130,9 @@ pma-web/
 │   ├── App.jsx
 │   ├── main.jsx
 │   ├── components/
+│   │   ├── IconBadge.jsx
 │   │   ├── LanguageBadge.jsx
+│   │   ├── LogoMark.jsx
 │   │   ├── ProductCard.jsx
 │   │   └── SectionHeading.jsx
 │   ├── content/
@@ -156,8 +160,10 @@ Contiene el contenido y la configuración de idiomas.
 Componentes reutilizables para bloques repetidos:
 
 - `SectionHeading`: encabezados consistentes para secciones.
-- `ProductCard`: tarjeta técnica por producto.
+- `ProductCard`: card de producto enfocada en beneficio comercial y CTA.
 - `LanguageBadge`: indicador visual de arquitectura bilingüe.
+- `LogoMark`: adaptación vectorial del isotipo para branding consistente en navbar, hero y fallback.
+- `IconBadge`: set simple de íconos industriales para confianza, contacto y productos.
 - `ErrorBoundary`: evita una pantalla completamente en blanco si ocurre un error de render en cliente.
 
 ### `src/layouts/SiteLayout.jsx`
