@@ -8,8 +8,190 @@
       content="PMA desarrolla soluciones y accesorios para 4x4, camionetas y operaciones mineras en Chile. Equipamiento industrial, robusto y compatible con terreno real."
     />
     <title>PMA | Accesorios industriales para 4x4, pickups y minería</title>
+    <style>
+      :root {
+        color: #f5f7fa;
+        background: #0f1115;
+        font-family: Inter, Arial, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        background: #0f1115;
+        color: #f5f7fa;
+      }
+
+      #root {
+        min-height: 100vh;
+      }
+
+      #app-fallback {
+        min-height: 100vh;
+        background:
+          linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+          #0f1115;
+        background-size: 32px 32px, 32px 32px, auto;
+      }
+
+      body[data-app-ready='true'] #app-fallback {
+        display: none;
+      }
+
+      .fallback-shell {
+        margin: 0 auto;
+        max-width: 1180px;
+        padding: 32px 20px 64px;
+      }
+
+      .fallback-nav,
+      .fallback-hero,
+      .fallback-card {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 24px;
+      }
+
+      .fallback-nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 18px 20px;
+      }
+
+      .fallback-brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .fallback-logo {
+        display: inline-flex;
+        width: 48px;
+        height: 48px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        border: 1px solid rgba(196, 111, 45, 0.7);
+        color: #c46f2d;
+        background: rgba(196, 111, 45, 0.08);
+        font-weight: 800;
+        letter-spacing: 0.25em;
+      }
+
+      .fallback-nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        color: #97a1ad;
+        font-size: 14px;
+      }
+
+      .fallback-hero {
+        margin-top: 24px;
+        padding: 32px;
+      }
+
+      .fallback-eyebrow {
+        color: #c46f2d;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+      }
+
+      .fallback-title {
+        margin: 16px 0 0;
+        max-width: 920px;
+        font-size: clamp(2.5rem, 7vw, 5rem);
+        line-height: 0.95;
+      }
+
+      .fallback-copy {
+        margin-top: 20px;
+        max-width: 760px;
+        color: #97a1ad;
+        font-size: 18px;
+        line-height: 1.7;
+      }
+
+      .fallback-grid {
+        display: grid;
+        gap: 16px;
+        margin-top: 32px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .fallback-card {
+        padding: 20px;
+      }
+
+      .fallback-card strong {
+        display: block;
+        margin-bottom: 10px;
+        color: #d6c5a2;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+      }
+
+      .fallback-note {
+        margin-top: 24px;
+        color: #97a1ad;
+        font-size: 14px;
+      }
+    </style>
   </head>
-  <body class="bg-pma-carbon text-white">
+  <body>
+    <div id="app-fallback" aria-live="polite">
+      <div class="fallback-shell">
+        <div class="fallback-nav">
+          <div class="fallback-brand">
+            <div class="fallback-logo">PMA</div>
+            <div>
+              <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: #d6c5a2;">PMA Chile</div>
+              <div style="font-size: 13px; color: #97a1ad; margin-top: 4px;">Accesorios industriales para 4x4, pickups y minería</div>
+            </div>
+          </div>
+          <div class="fallback-nav-links">
+            <span>Inicio</span>
+            <span>Productos</span>
+            <span>Detalle técnico</span>
+            <span>Empresas</span>
+            <span>Contacto</span>
+          </div>
+        </div>
+
+        <section class="fallback-hero">
+          <div class="fallback-eyebrow">Equipamiento técnico para terreno chileno</div>
+          <h1 class="fallback-title">Accesorios industriales para pickups, 4x4 y operaciones mineras.</h1>
+          <p class="fallback-copy">
+            PMA desarrolla soluciones robustas para vehículos de faena, flotas logísticas y usuarios exigentes.
+            Si la aplicación demora en cargar o ocurre un error de JavaScript, este respaldo visible evita una pantalla en blanco.
+          </p>
+
+          <div class="fallback-grid">
+            <div class="fallback-card">
+              <strong>Productos</strong>
+              <div>Parachoques operacionales, racks de carga, iluminación técnica y accesorios para continuidad operacional.</div>
+            </div>
+            <div class="fallback-card">
+              <strong>Empresas</strong>
+              <div>Canal preparado para solicitudes de cotización de flotas, contratistas y operaciones mineras.</div>
+            </div>
+            <div class="fallback-card">
+              <strong>Contacto</strong>
+              <div>Correo comercial: contacto@pma-industrial.cl · Teléfono: +56 2 2984 6100.</div>
+            </div>
+          </div>
+
+          <p class="fallback-note">Cargando experiencia React + Vite + Tailwind…</p>
+        </section>
+      </div>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

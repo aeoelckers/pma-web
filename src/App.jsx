@@ -15,6 +15,12 @@ function App() {
     if (description) {
       description.setAttribute('content', copy.meta.description)
     }
+
+    document.body.dataset.appReady = 'true'
+
+    return () => {
+      document.body.dataset.appReady = 'false'
+    }
   }, [copy.meta.description, copy.meta.title, locale])
 
   return (

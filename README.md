@@ -158,6 +158,7 @@ Componentes reutilizables para bloques repetidos:
 - `SectionHeading`: encabezados consistentes para secciones.
 - `ProductCard`: tarjeta técnica por producto.
 - `LanguageBadge`: indicador visual de arquitectura bilingüe.
+- `ErrorBoundary`: evita una pantalla completamente en blanco si ocurre un error de render en cliente.
 
 ### `src/layouts/SiteLayout.jsx`
 Layout principal del sitio con:
@@ -166,6 +167,9 @@ Layout principal del sitio con:
 - navegación por anclas,
 - estructura de página,
 - footer de posicionamiento.
+
+### `index.html`
+Incluye un shell visual mínimo de respaldo para que el usuario vea contenido de marca incluso si la carga de JavaScript falla o se demora.
 
 ### `src/pages/HomePage.jsx`
 Compone todas las secciones del sitio actual en una sola página larga. Esto acelera la validación comercial inicial y permite migrar luego a rutas reales si el proyecto evoluciona.
