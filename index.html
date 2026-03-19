@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PMA Chile desarrolla soluciones y accesorios industriales para pickups, 4x4 y operaciones mineras en Chile."
+    />
+    <title>PMA Chile | Soluciones industriales para pickups y operaciones en terreno</title>
+    <style>
+      :root {
+        color: #f5f7fa;
+        background: #0f1115;
+        font-family: Inter, Arial, sans-serif;
+      }
+      body {
+        margin: 0;
+        min-width: 320px;
+        background:
+          linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+          #0f1115;
+        background-size: 32px 32px, 32px 32px, auto;
+        color: #f5f7fa;
+      }
+      #root {
+        min-height: 100vh;
+      }
+      #app-fallback {
+        min-height: 100vh;
+      }
+      body[data-app-ready='true'] #app-fallback {
+        display: none;
+      }
+      .shell {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 24px 20px 64px;
+      }
+      .nav,
+      .hero,
+      .card {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 30px;
+      }
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 16px 20px;
+        backdrop-filter: blur(16px);
+      }
+      .brand { display:flex; align-items:center; gap:14px; }
+      .logo-box {
+        width: 54px; height: 54px; border-radius: 18px; display:flex; align-items:center; justify-content:center;
+        border: 1px solid rgba(255,255,255,.1); background: rgba(0,0,0,.25);
+      }
+      .nav-links { display:flex; gap:14px; flex-wrap:wrap; color:#97a1ad; font-size:14px; }
+      .hero {
+        overflow: hidden;
+        margin-top: 22px;
+      }
+      .hero-grid {
+        display:grid;
+        gap:0;
+      }
+      .hero-left { padding: 32px; }
+      .eyebrow { color:#f04b37; font-size:12px; font-weight:700; letter-spacing:.28em; text-transform:uppercase; }
+      .title { margin:18px 0 0; max-width:780px; font-size: clamp(2.7rem, 7vw, 5.3rem); line-height:.94; }
+      .copy { max-width:720px; margin-top:20px; color:#97a1ad; font-size:19px; line-height:1.7; }
+      .actions { display:flex; flex-wrap:wrap; gap:14px; margin-top:28px; }
+      .btn {
+        display:inline-flex; align-items:center; justify-content:center; padding:14px 22px; border-radius:999px;
+        font-size:14px; font-weight:700; text-decoration:none;
+      }
+      .btn-primary { background:#f04b37; color:#fff; }
+      .btn-secondary { border:1px solid rgba(255,255,255,.12); color:#fff; }
+      .hero-right {
+        min-height: 420px;
+        position: relative;
+        border-top: 1px solid rgba(255,255,255,.08);
+        background: radial-gradient(circle at 72% 32%, rgba(240,75,55,.4), transparent 20%), linear-gradient(140deg, #2b1715, #12151c 42%, #0f1115 70%);
+      }
+      .vehicle {
+        position:absolute; inset:56px 44px 44px; border-radius:32px; border:1px solid rgba(255,255,255,.1);
+        background: linear-gradient(145deg, rgba(68,45,39,.92), rgba(17,19,24,.94));
+        box-shadow: 0 30px 80px rgba(0,0,0,.5);
+      }
+      .cards { display:grid; gap:16px; margin-top:20px; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); }
+      .card { padding: 20px; }
+      .card strong { display:block; margin-bottom:10px; color:#d6c5a2; font-size:13px; letter-spacing:.2em; text-transform:uppercase; }
+      .note { margin-top:22px; color:#97a1ad; font-size:13px; }
+      @media (min-width: 1100px) {
+        .hero-grid { grid-template-columns: 1.08fr .92fr; }
+        .hero-right { border-top:0; border-left:1px solid rgba(255,255,255,.08); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app-fallback" aria-live="polite">
+      <div class="shell">
+        <div class="nav">
+          <div class="brand">
+            <div class="logo-box">
+              <svg viewBox="0 0 120 120" width="42" height="42" aria-hidden="true">
+                <path d="M12 12h34l16 38H30z" fill="#f04b37"></path>
+                <path d="M50 12h58L86 58H58l8 18h32L76 120 54 86h-28l10-20h30l-8-18H28z" fill="#f5f7fa"></path>
+              </svg>
+            </div>
+            <div>
+              <div style="font-size:13px;font-weight:800;letter-spacing:.28em;text-transform:uppercase;color:#fff;">PMA Chile</div>
+              <div style="font-size:13px;color:#97a1ad;margin-top:4px;">Accesorios industriales para 4x4, pickups y minería</div>
+            </div>
+          </div>
+          <div class="nav-links">
+            <span>Inicio</span><span>Productos</span><span>Detalle técnico</span><span>Empresas</span><span>Contacto</span>
+          </div>
+        </div>
+
+        <section class="hero">
+          <div class="hero-grid">
+            <div class="hero-left">
+              <div class="eyebrow">Equipamiento técnico para terreno chileno</div>
+              <h1 class="title">Soluciones industriales para pickups y operaciones en terreno</h1>
+              <p class="copy">Equipamiento técnico diseñado para faena, logística y condiciones extremas en Chile.</p>
+              <div class="actions">
+                <a class="btn btn-primary" href="#">Solicitar cotización</a>
+                <a class="btn btn-secondary" href="#">Ver productos</a>
+              </div>
+              <div class="cards">
+                <div class="card"><strong>Condiciones reales</strong><div>Productos pensados para vibración, polvo, carga y jornadas extensas.</div></div>
+                <div class="card"><strong>Flotas en Chile</strong><div>Compatibilidad con plataformas de trabajo y soporte comercial local.</div></div>
+                <div class="card"><strong>Lead comercial</strong><div>La experiencia React carga sobre este respaldo para evitar pantalla en blanco.</div></div>
+              </div>
+              <div class="note">Cargando experiencia PMA Chile…</div>
+            </div>
+            <div class="hero-right"><div class="vehicle"></div></div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

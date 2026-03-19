@@ -1,0 +1,15 @@
+{
+  "brand": "PMA Chile",
+  "updated_for": "web",
+  "colors": {
+    "carbon": "#0f1115",
+    "steel": "#171b21",
+    "graphite": "#222833",
+    "line": "#313947",
+    "ash": "#97a1ad",
+    "sand": "#d6c5a2",
+    "industrial_red": "#f04b37",
+    "copper": "#c46f2d",
+    "success_whatsapp": "#47d67d"
+  }
+}
